@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    # render :template => "users/new"
   end
 
   def create
