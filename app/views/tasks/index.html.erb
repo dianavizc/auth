@@ -1,5 +1,6 @@
 <h1>Do the TODOs</h1>
 
+<% if @user != nil %>
 <form action="/tasks" method="post">
   <input type="text" name="description">
   <button>Add new task</button>
@@ -20,3 +21,8 @@
     </tr>
   <% end %>
 </table>
+
+<% else %>
+  <p>Login to Create Tasks</p>
+
+<% end %> 
